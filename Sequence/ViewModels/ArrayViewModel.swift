@@ -48,7 +48,7 @@ final class ArrayViewModel: ObservableObject, ControlViewModelDelegate {
     }
     
     func test() {
-        if (arrayManipulator.arrayHasObjects()) {
+        if arrayManipulator.arrayHasObjects() {
             let insertAt0Time = arrayManipulator.insertNewObjectAtBeginning()
             let insertAtMidTime = arrayManipulator.insertNewObjectInMiddle()
             let insertAtEndTime = arrayManipulator.addNewObjectAtEnd()
