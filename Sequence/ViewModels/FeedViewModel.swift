@@ -9,9 +9,14 @@
 import Foundation
 
 final public class FeedViewModel: ObservableObject {
+    
+    // MARK: Properties
+    
     private var feedDataProvider: FeedDataProvider
     
     @Published var feedData: [FeedData]
+    
+    // MARK: Initialization
     
     init(feedDataProvider: FeedDataProvider) {
         self.feedDataProvider = feedDataProvider

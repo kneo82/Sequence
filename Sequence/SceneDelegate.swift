@@ -20,11 +20,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         let feedViewModel = FeedViewModel(feedDataProvider: FeedDataProvider())
+        let arrayViewModel = ArrayViewModel(arrayManipulator: SwiftArrayManipulator())
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
             .environmentObject(feedViewModel)
+            .environmentObject(arrayViewModel)
 
+        
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
