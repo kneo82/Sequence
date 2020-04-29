@@ -46,6 +46,7 @@
 		3070E7732459FF86009A97FA /* PrefixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7722459FF86009A97FA /* PrefixSequence.swift */; };
 		3070E775245A00E7009A97FA /* SuffixArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E774245A00E7009A97FA /* SuffixArrayView.swift */; };
 		3070E777245A00FE009A97FA /* SuffixArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E776245A00FE009A97FA /* SuffixArrayViewModel.swift */; };
+		3070E779245A09DC009A97FA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E778245A09DC009A97FA /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		3070E7722459FF86009A97FA /* PrefixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixSequence.swift; sourceTree = "<group>"; };
 		3070E774245A00E7009A97FA /* SuffixArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayView.swift; sourceTree = "<group>"; };
 		3070E776245A00FE009A97FA /* SuffixArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayViewModel.swift; sourceTree = "<group>"; };
+		3070E778245A09DC009A97FA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				3070E7572459692A009A97FA /* RowView.swift */,
 				3070E76024599F36009A97FA /* ControlView.swift */,
 				3070E7622459A2E4009A97FA /* ActivityIndicator.swift */,
+				3070E778245A09DC009A97FA /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				3070E7482458D98E009A97FA /* Profiler.swift in Sources */,
 				3070E7632459A2E4009A97FA /* ActivityIndicator.swift in Sources */,
 				3070E7412458D98E009A97FA /* ArrayManipulator.swift in Sources */,
+				3070E779245A09DC009A97FA /* SearchBar.swift in Sources */,
 				3070E7652459B5FA009A97FA /* DictionaryViewModel.swift in Sources */,
 				3070E7672459BA83009A97FA /* SetViewModel.swift in Sources */,
 				3070E7182458D898009A97FA /* ContentView.swift in Sources */,

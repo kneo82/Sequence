@@ -13,8 +13,9 @@ struct FeedView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.feedData) { item in
+            VStack {
+                SearchBar(text: $viewModel.searchText, placeholder: "Search")
+                List(viewModel.feedData) { item in
                     NavigationLink(destination: self.destination(name: item.name), label: {
                         Text(item.name)
                     })
