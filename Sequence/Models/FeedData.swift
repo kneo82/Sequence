@@ -11,3 +11,9 @@ import Foundation
 struct FeedData {
     let name: String
 }
+
+extension FeedData: Identifiable {
+    public var id: String {
+        self.name
+    }
+}

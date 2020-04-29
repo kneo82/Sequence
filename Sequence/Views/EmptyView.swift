@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EmptyView.swift
 //  Sequence
 //
 //  Created by Vitaliy Voronok on 29.04.2020.
@@ -8,14 +8,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EmptyView: View {
     var body: some View {
-        FeedView()
+        Text("Functionality Not Implemented")
+            .foregroundColor(.red)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        EmptyView()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DictionaryView.swift
 //  Sequence
 //
 //  Created by Vitaliy Voronok on 29.04.2020.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DictionaryView: View {
     var body: some View {
-        FeedView()
+        Text("Dictionary View")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DictionaryView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DictionaryView()
     }
 }

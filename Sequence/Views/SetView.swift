@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SetView.swift
 //  Sequence
 //
 //  Created by Vitaliy Voronok on 29.04.2020.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SetView: View {
     var body: some View {
-        FeedView()
+        Text("Set View")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SetView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SetView()
     }
 }

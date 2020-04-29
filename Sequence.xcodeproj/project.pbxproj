@@ -25,6 +25,12 @@
 		3070E7462458D98E009A97FA /* SwiftSetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E73E2458D98E009A97FA /* SwiftSetManipulator.swift */; };
 		3070E7472458D98E009A97FA /* SetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E73F2458D98E009A97FA /* SetManipulator.swift */; };
 		3070E7482458D98E009A97FA /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7402458D98E009A97FA /* Profiler.swift */; };
+		3070E74A24594580009A97FA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E74924594580009A97FA /* FeedView.swift */; };
+		3070E74C2459472A009A97FA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E74B2459472A009A97FA /* FeedViewModel.swift */; };
+		3070E74E2459535E009A97FA /* ArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E74D2459535E009A97FA /* ArrayView.swift */; };
+		3070E75024595625009A97FA /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E74F24595625009A97FA /* DictionaryView.swift */; };
+		3070E75224595630009A97FA /* SetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E75124595630009A97FA /* SetView.swift */; };
+		3070E7542459566D009A97FA /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7532459566D009A97FA /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		3070E73E2458D98E009A97FA /* SwiftSetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSetManipulator.swift; sourceTree = "<group>"; };
 		3070E73F2458D98E009A97FA /* SetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetManipulator.swift; sourceTree = "<group>"; };
 		3070E7402458D98E009A97FA /* Profiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiler.swift; sourceTree = "<group>"; };
+		3070E74924594580009A97FA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		3070E74B2459472A009A97FA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		3070E74D2459535E009A97FA /* ArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayView.swift; sourceTree = "<group>"; };
+		3070E74F24595625009A97FA /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		3070E75124595630009A97FA /* SetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetView.swift; sourceTree = "<group>"; };
+		3070E7532459566D009A97FA /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 		3070E7312458D901009A97FA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3070E74B2459472A009A97FA /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				3070E7172458D898009A97FA /* ContentView.swift */,
+				3070E74924594580009A97FA /* FeedView.swift */,
+				3070E74D2459535E009A97FA /* ArrayView.swift */,
+				3070E74F24595625009A97FA /* DictionaryView.swift */,
+				3070E75124595630009A97FA /* SetView.swift */,
+				3070E7532459566D009A97FA /* EmptyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				3070E7352458D98E009A97FA /* DataStructures */,
+				3070E7392458D98E009A97FA /* StringGenerator.swift */,
 				3070E7402458D98E009A97FA /* Profiler.swift */,
 			);
 			path = Profiler;
@@ -157,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				3070E7362458D98E009A97FA /* Array */,
-				3070E7392458D98E009A97FA /* StringGenerator.swift */,
 				3070E73A2458D98E009A97FA /* Dictionary */,
 				3070E73D2458D98E009A97FA /* Set */,
 			);
@@ -263,19 +281,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3070E7432458D98E009A97FA /* StringGenerator.swift in Sources */,
+				3070E74C2459472A009A97FA /* FeedViewModel.swift in Sources */,
 				3070E7462458D98E009A97FA /* SwiftSetManipulator.swift in Sources */,
+				3070E75224595630009A97FA /* SetView.swift in Sources */,
 				3070E7142458D898009A97FA /* AppDelegate.swift in Sources */,
 				3070E7472458D98E009A97FA /* SetManipulator.swift in Sources */,
 				3070E72A2458D8C8009A97FA /* Services.swift in Sources */,
 				3070E7162458D898009A97FA /* SceneDelegate.swift in Sources */,
 				3070E7452458D98E009A97FA /* DictionaryManipulator.swift in Sources */,
+				3070E75024595625009A97FA /* DictionaryView.swift in Sources */,
 				3070E7442458D98E009A97FA /* SwiftDictionaryManipulator.swift in Sources */,
+				3070E74A24594580009A97FA /* FeedView.swift in Sources */,
+				3070E74E2459535E009A97FA /* ArrayView.swift in Sources */,
 				3070E7302458D8EE009A97FA /* FeedData.swift in Sources */,
 				3070E7482458D98E009A97FA /* Profiler.swift in Sources */,
 				3070E7412458D98E009A97FA /* ArrayManipulator.swift in Sources */,
 				3070E7182458D898009A97FA /* ContentView.swift in Sources */,
 				3070E72F2458D8EE009A97FA /* FeedDataProvider.swift in Sources */,
 				3070E7422458D98E009A97FA /* SwiftArrayManipulator.swift in Sources */,
+				3070E7542459566D009A97FA /* EmptyView.swift in Sources */,
 				3070E72B2458D8C8009A97FA /* AlgoProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
