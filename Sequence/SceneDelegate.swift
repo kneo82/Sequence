@@ -22,12 +22,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let feedViewModel = FeedViewModel(feedDataProvider: FeedDataProvider())
         let arrayViewModel = ArrayViewModel(arrayManipulator: SwiftArrayManipulator())
         let dictionaryViewModel = DictionaryViewModel(dictionaryManipulator: SwiftDictionaryManipulator())
+        let setViewModel = SetViewModel(setManipulator: SwiftSetManipulator())
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
             .environmentObject(feedViewModel)
             .environmentObject(arrayViewModel)
             .environmentObject(dictionaryViewModel)
+            .environmentObject(setViewModel)
         
         
         

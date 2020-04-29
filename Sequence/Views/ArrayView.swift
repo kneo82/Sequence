@@ -15,7 +15,7 @@ struct ArrayView: View {
         ZStack {
             VStack(alignment: .center, spacing: 10.0) {
                 ControlView(viewModel: viewModel.control)
-
+                
                 List {
                     RowView(name: "Array Creation:", value: $viewModel.creationTime)
                     RowView(name: "Insert At Index 0:", value: $viewModel.insertAt0Time)
