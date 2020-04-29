@@ -32,6 +32,8 @@ struct FeedView: View {
             return AnyView(SetView())
         case "Dictionary":
             return AnyView(DictionaryView())
+        case "SuffixArray":
+            return AnyView(SuffixArrayView())
         default:
             return AnyView(EmptyView())
         }

@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let arrayViewModel = ArrayViewModel(arrayManipulator: SwiftArrayManipulator())
         let dictionaryViewModel = DictionaryViewModel(dictionaryManipulator: SwiftDictionaryManipulator())
         let setViewModel = SetViewModel(setManipulator: SwiftSetManipulator())
+        let suffixArrayViewModel = SuffixArrayViewModel(suffixArrayManipulator: SwiftSuffixArrayManipulator())
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
@@ -30,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             .environmentObject(arrayViewModel)
             .environmentObject(dictionaryViewModel)
             .environmentObject(setViewModel)
-        
+            .environmentObject(suffixArrayViewModel)
         
         
         // Use a UIHostingController as window root view controller.

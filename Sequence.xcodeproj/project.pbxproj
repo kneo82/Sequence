@@ -39,6 +39,13 @@
 		3070E7632459A2E4009A97FA /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7622459A2E4009A97FA /* ActivityIndicator.swift */; };
 		3070E7652459B5FA009A97FA /* DictionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7642459B5FA009A97FA /* DictionaryViewModel.swift */; };
 		3070E7672459BA83009A97FA /* SetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7662459BA83009A97FA /* SetViewModel.swift */; };
+		3070E76A2459C46F009A97FA /* SuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7692459C46F009A97FA /* SuffixArrayManipulator.swift */; };
+		3070E76C2459C482009A97FA /* SwiftSuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E76B2459C482009A97FA /* SwiftSuffixArrayManipulator.swift */; };
+		3070E76F2459E62C009A97FA /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E76D2459C4F1009A97FA /* SuffixSequence.swift */; };
+		3070E7712459FE32009A97FA /* SubSequenceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7702459FE31009A97FA /* SubSequenceSearch.swift */; };
+		3070E7732459FF86009A97FA /* PrefixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E7722459FF86009A97FA /* PrefixSequence.swift */; };
+		3070E775245A00E7009A97FA /* SuffixArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E774245A00E7009A97FA /* SuffixArrayView.swift */; };
+		3070E777245A00FE009A97FA /* SuffixArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070E776245A00FE009A97FA /* SuffixArrayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +83,13 @@
 		3070E7622459A2E4009A97FA /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		3070E7642459B5FA009A97FA /* DictionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewModel.swift; sourceTree = "<group>"; };
 		3070E7662459BA83009A97FA /* SetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewModel.swift; sourceTree = "<group>"; };
+		3070E7692459C46F009A97FA /* SuffixArrayManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayManipulator.swift; sourceTree = "<group>"; };
+		3070E76B2459C482009A97FA /* SwiftSuffixArrayManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSuffixArrayManipulator.swift; sourceTree = "<group>"; };
+		3070E76D2459C4F1009A97FA /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		3070E7702459FE31009A97FA /* SubSequenceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSequenceSearch.swift; sourceTree = "<group>"; };
+		3070E7722459FF86009A97FA /* PrefixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixSequence.swift; sourceTree = "<group>"; };
+		3070E774245A00E7009A97FA /* SuffixArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayView.swift; sourceTree = "<group>"; };
+		3070E776245A00FE009A97FA /* SuffixArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +169,7 @@
 				3070E75924598CAE009A97FA /* ArrayViewModel.swift */,
 				3070E7642459B5FA009A97FA /* DictionaryViewModel.swift */,
 				3070E7662459BA83009A97FA /* SetViewModel.swift */,
+				3070E776245A00FE009A97FA /* SuffixArrayViewModel.swift */,
 				3070E75C24598FD0009A97FA /* ControlViewModel.swift */,
 			);
 			path = ViewModels;
@@ -167,6 +182,7 @@
 				3070E74924594580009A97FA /* FeedView.swift */,
 				3070E74D2459535E009A97FA /* ArrayView.swift */,
 				3070E74F24595625009A97FA /* DictionaryView.swift */,
+				3070E774245A00E7009A97FA /* SuffixArrayView.swift */,
 				3070E75124595630009A97FA /* SetView.swift */,
 				3070E7532459566D009A97FA /* EmptyView.swift */,
 				3070E7572459692A009A97FA /* RowView.swift */,
@@ -199,6 +215,7 @@
 		3070E7352458D98E009A97FA /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				3070E7682459C413009A97FA /* SuffixArray */,
 				3070E7362458D98E009A97FA /* Array */,
 				3070E73A2458D98E009A97FA /* Dictionary */,
 				3070E73D2458D98E009A97FA /* Set */,
@@ -239,6 +256,18 @@
 				3070E75E245992AD009A97FA /* ControlViewModelDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3070E7682459C413009A97FA /* SuffixArray */ = {
+			isa = PBXGroup;
+			children = (
+				3070E76D2459C4F1009A97FA /* SuffixSequence.swift */,
+				3070E7722459FF86009A97FA /* PrefixSequence.swift */,
+				3070E7692459C46F009A97FA /* SuffixArrayManipulator.swift */,
+				3070E76B2459C482009A97FA /* SwiftSuffixArrayManipulator.swift */,
+				3070E7702459FE31009A97FA /* SubSequenceSearch.swift */,
+			);
+			path = SuffixArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +346,10 @@
 				3070E7462458D98E009A97FA /* SwiftSetManipulator.swift in Sources */,
 				3070E75224595630009A97FA /* SetView.swift in Sources */,
 				3070E7142458D898009A97FA /* AppDelegate.swift in Sources */,
+				3070E76A2459C46F009A97FA /* SuffixArrayManipulator.swift in Sources */,
+				3070E76C2459C482009A97FA /* SwiftSuffixArrayManipulator.swift in Sources */,
 				3070E7472458D98E009A97FA /* SetManipulator.swift in Sources */,
+				3070E7712459FE32009A97FA /* SubSequenceSearch.swift in Sources */,
 				3070E75F245992AD009A97FA /* ControlViewModelDelegate.swift in Sources */,
 				3070E72A2458D8C8009A97FA /* Services.swift in Sources */,
 				3070E7162458D898009A97FA /* SceneDelegate.swift in Sources */,
@@ -326,7 +358,9 @@
 				3070E7442458D98E009A97FA /* SwiftDictionaryManipulator.swift in Sources */,
 				3070E74A24594580009A97FA /* FeedView.swift in Sources */,
 				3070E74E2459535E009A97FA /* ArrayView.swift in Sources */,
+				3070E777245A00FE009A97FA /* SuffixArrayViewModel.swift in Sources */,
 				3070E7302458D8EE009A97FA /* FeedData.swift in Sources */,
+				3070E775245A00E7009A97FA /* SuffixArrayView.swift in Sources */,
 				3070E7482458D98E009A97FA /* Profiler.swift in Sources */,
 				3070E7632459A2E4009A97FA /* ActivityIndicator.swift in Sources */,
 				3070E7412458D98E009A97FA /* ArrayManipulator.swift in Sources */,
@@ -335,10 +369,12 @@
 				3070E7182458D898009A97FA /* ContentView.swift in Sources */,
 				3070E75A24598CAF009A97FA /* ArrayViewModel.swift in Sources */,
 				3070E72F2458D8EE009A97FA /* FeedDataProvider.swift in Sources */,
+				3070E7732459FF86009A97FA /* PrefixSequence.swift in Sources */,
 				3070E75D24598FD1009A97FA /* ControlViewModel.swift in Sources */,
 				3070E7422458D98E009A97FA /* SwiftArrayManipulator.swift in Sources */,
 				3070E76124599F36009A97FA /* ControlView.swift in Sources */,
 				3070E7582459692A009A97FA /* RowView.swift in Sources */,
+				3070E76F2459E62C009A97FA /* SuffixSequence.swift in Sources */,
 				3070E7542459566D009A97FA /* EmptyView.swift in Sources */,
 				3070E72B2458D8C8009A97FA /* AlgoProvider.swift in Sources */,
 			);
